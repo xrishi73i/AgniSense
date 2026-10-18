@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="2.5" flood-color="#39D98A" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Outer background circle with subtle glow -->
+  <circle
+    cx="32"
+    cy="32"
+    r="29"
+    fill="#0d281c"
+    stroke="#39D98A"
+    stroke-width="2.5"
+    filter="url(#glow)"
+  />
+
+  <!-- Subtle translucent inner layer -->
+  <circle
+    cx="32"
+    cy="32"
+    r="26"
+    fill="#153D2B"
+    fill-opacity="0.5"
+  />
+
+  <!-- Lucide Leaf Icon centered and scaled -->
+  <g transform="translate(16, 16) scale(1.3333)">
+    <!-- Main leaf body -->
+    <path
+      d="M11 20a10 10 0 0010-10 25.9 25.9 0 00-1.04-7.281 1 1 0 00-1.755-.325C15.833 5.5 13 5.5 9.8 6.1A7 7 0 0011 20"
+      fill="#39D98A"
+      fill-opacity="0.28"
+      stroke="#39D98A"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <!-- Leaf vein -->
+    <path
+      d="M2 21a5 5 0 012.911-4.544C7.613 15.212 8.351 15.24 11 13"
+      fill="none"
+      stroke="#39D98A"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </g>
+</svg>
