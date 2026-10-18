@@ -7,7 +7,6 @@ const nextConfig: NextConfig = {
   },
   devIndicators: false,
   turbopack: {
-    root: "/home/xkrishna/plantWeb",
     rules: {
       "*.css": {
         loaders: ["@tailwindcss/turbopack"],
@@ -19,4 +18,6 @@ const nextConfig: NextConfig = {
 
 export default nextConfig;
 
-import('@opennextjs/cloudflare').then(m => m.initOpenNextCloudflareForDev());
+if (process.env.NODE_ENV === "development") {
+  import("@opennextjs/cloudflare").then((m) => m.initOpenNextCloudflareForDev()).catch(() => {});
+}
